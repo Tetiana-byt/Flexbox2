@@ -20,7 +20,9 @@
   margin: 15px;
   width: 400px;
   display: flex;
-  align-items: start;
+  justify-content: space-between;
+  align-items: stretch;
+
 }
 
 .photo {
@@ -28,10 +30,16 @@
   height: 120px;
   border-radius: 50%;
   border: 2px solid #6995a959;
+  display: flex;
+  align-items: center;
+  flex-grow: 0;
 }
 
 .info {
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .info p {
@@ -40,6 +48,10 @@
 
 .buttons {
   padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 0;
 }
 
 .call,
